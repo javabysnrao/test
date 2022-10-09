@@ -16,6 +16,7 @@ public class DeleteVoter extends GenericServlet{
 	@Override
 	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
 		try {
+			System.out.println("service...");
 			//Read voter from html page (when we click delete hyper link)
 			String id = req.getParameter("id");
 			int vid = Integer.parseInt(id);
